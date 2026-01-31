@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .main-container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+            width: 100%;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .message-box {
+            background-color: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: left;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .message-box p {
+            color: #444;
+            font-size: 18px;
+            line-height: 1.7;
+            margin: 0;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            flex: 1;
+            min-width: 200px;
+            margin: 15px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        .feature p {
+            color: #666;
+        }
+        
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-note {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            color: #1976d2;
+            font-size: 14px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Página Principal</h1>
+        <div class="subtitle">
+            Esta es la página principal ubicada en una rama diferente del repositorio
+        </div>
+        
+        <div class="message-box">
+            <p>Este es un mensaje completamente diferente al de la página anterior. Aquí en la página principal puedes encontrar información importante, características principales y enlaces a otras secciones del proyecto. Esta página está diseñada para ser el punto de entrada principal de la aplicación.</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🚀 Característica 1</h3>
+                <p>Funcionalidad avanzada para mejorar la experiencia del usuario.</p>
+            </div>
+            <div class="feature">
+                <h3>🎨 Característica 2</h3>
+                <p>Diseño responsive que se adapta a todos los dispositivos.</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Característica 3</h3>
+                <p>Rendimiento optimizado para una carga rápida.</p>
+            </div>
+        </div>
+        
+        <div class="buttons-container">
+            <!-- Enlace para regresar a prueba.html -->
+            <a href="prueba.html" class="btn btn-primary">← Volver a Prueba.html</a>
+            
+            <a href="#features" class="btn btn-secondary">Ver Más Características</a>
+        </div>
+        
+        <div class="info-note">
+            <strong>Información:</strong> Esta página (index.html) se encuentra en una rama diferente del repositorio. 
+            El botón "Volver a Prueba.html" te llevará de regreso a la página anterior.
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2023 Proyecto con Múltiples Ramas | Página Principal
+    </footer>
+</body>
+</html>
