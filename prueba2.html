@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .message-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .link-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .link-button:hover {
+            background-color: #45a049;
+        }
+        
+        .note {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1>¡Bienvenido!</h1>
+        <p>Este es el único mensaje que se muestra en esta página. Haz clic en el botón para ir a la página principal que se encuentra en una rama diferente del repositorio.</p>
+        
+        <!-- Enlace a index.html en otra rama del repositorio -->
+        <a href="index.html" class="link-button">Ir a la Página Principal</a>
+        
+        <div class="note">
+            Nota2: Esta página está diseñada para trabajar en un repositorio con múltiples ramas.
+            El archivo index.html está ubicado en una rama diferente del repositorio.
+        </div>
+    </div>
+</body>
+</html>
